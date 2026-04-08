@@ -12,5 +12,5 @@ def login():
     else:
         print("Username not found.")
 
-# Example usage
+# Just keep swimming
 login()
