@@ -1,0 +1,55 @@
+#1#sp-000:[]-[]uses_modules-BIF_time/epoch 054#EP
+import time 
+from datetime import datetime
+now = time.localtime() 
+formatted_time = time.strftime ("%d-%m-%Y %H:%M:%S", now) 
+seconds = time.time()
+print("")
+print("local date and time is: " + formatted_time)
+print("")
+print("""My name is Monty,
+I would like to show you a 'sssssss ample of Time & Space
+
+The program we are using, named after my Great Uncle Python.
+Started a clock back in 1970
+-The first day of January in Fact, we call it a Unix Epoch-
+The number you see is curently the Real|Time evalautaion.""")
+print("")
+print("Seconds since Unix Epoch ="+ str(seconds)) 
+#EP_018
+print("") # # # # # # # # 019 # # # # # # 035 # # # # # 16|BAR# # # # # # #
+answer = input("If you want to know more, press {Y} on your Keypad")
+print("")
+if answer == "Y":
+   print("""Thats great, we can calculate Time and space
+in hours not just Seconds.
+I '" Massssster Python can work out how old
+you are in Hours.
+
+Does that sound like something you would like
+to know ?""")
+else:
+    print("would you like me to read your HORUSCOPE: for Today ?")
+print("")  
+answer002 = input("press {Y} on your Keypad")
+if answer002 == "Y":
+    print("")
+#EP_036
+print("") # # # # # # # # 037 # # # # # # 053 # # # # # +16|BAR# # # # # # #
+if answer002 == "Y":
+    dob_input = input("Enter your Date of Birth (DD-MM-YYYY): ")
+    d, m, y = int(dob_input[0:2]), int(dob_input[3:5]), int(dob_input[6:10])
+    birth_epoch = time.mktime((y, m, d, 0, 0, 0, 0, 0, 0))
+total_seconds = seconds - birth_epoch
+total_hours = int(total_seconds / 3600)
+print("--------------------------------------------------")
+print("Total hours since you were born: " + str(total_hours) + " HOURS")
+print("")
+print("""Did you Know that the Sun as a Clock to ?
+The Ancients, used to measure the Zodiac Signs with this clock in Epochs.
+
+It takes the Sun 25,752-years to cycle through the House of the Zodiac, 
+we call this the Precession of the Equinoxes . . . WOWzers !!!!!""")
+print("")
+#EP_053
+# # # # # {054} # # # # # END # # # # # # END # # # # # # A r c h 5 4 8 2 #
